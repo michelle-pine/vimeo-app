@@ -2,56 +2,163 @@
 
 
 .carousel {
-    height:548px;
-    margin-bottom:$margin;
+    height: 548px;
+    margin-bottom: $margin;
+
     .carousel-inner {
-        height:100%;
-        background-color:black;
+        height: 100%;
+        
+
         .carousel-item {
-            height:100%;
-            width:100%;
-            overflow:hidden;
-            
-            .poster-img {
-                width:275px;
-                height:407px;
-                -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-                mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: black;
+
+            .carousel-content {
+                width: 100%;
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+
+                .info-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    width: 80%;
+                    justify-content: center;
+
+                    .poster {
+                        margin-right: $margin;
+
+                        @media (max-width: 768px) {
+                            margin-right: 0;
+                        }
+
+                        .poster-img {
+                            width: 275px;
+                            height: 407px;
+                            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+                            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+                        }
+                    }
+
+                    .movie-info {
+                        color: white;
+                        display: flex;
+                        max-width: 50%;
+
+                        @media (max-width: 768px) {
+                            max-width: 100%;
+                        }
+
+                        flex-direction: column;
+                        text-align:left;
+
+                        .movie-title,
+                        .movie-desc {
+                            @media (max-width: 768px) {
+                                display: none;
+                            }
+                        }
+
+                        .movie-desc {
+                            p {
+                                color: rgba(255, 255, 255, 0.6);
+                                font-weight:600;
+                            }
+
+                            max-height:500px;
+                            overflow:scroll;
+
+                        }
+
+                        .movie-buttons {
+                            
+                            button {
+                                padding: 13px 15px !important;
+                                font-size: 1.0625rem;
+                                margin-right:$margin / 4;
+                                color:white;
+                                .text-together {
+                                    display:flex;
+                                    align-content: center;
+                                    flex-direction: row;
+                                }
+                                i {
+                                    padding-right:5px;
+                                    font-size:25px;
+                                    
+                                }
+                                border-radius:5px;
+                                font-weight:bold;
+                            }
+
+                            .btn-watch {
+                                color:white;
+                                transition:0.3s all;
+                                &:hover {
+                                    opacity:0.8;
+                                }
+                            }
+                            .btn-outline {
+                                background:none;
+                                border:.5px solid rgba(255,255,255,.3);
+                                transition:0.3s all;
+                                &:hover {
+                                    border:.5px solid rgba(255,255,255,1);
+                                }
+                            }
+                            @media (max-width:768px) {
+                                display:flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+
+                    @media (max-width:768px) {
+                        flex-direction: column;
+                    }
+                }
+
             }
+
+
             .carousel-item-bg {
-                width:120%;
-                position:absolute;
-                margin-top:-35px;
-                margin-left:-35px;
-                left:0;
-                top:0;
-                opacity:0.3;
-                z-index:-1;
+                width: 120%;
+                position: absolute;
+                margin-top: -35px;
+                margin-left: -35px;
+                left: 0;
+                top: 0;
+                opacity: 0.3;
+                z-index: -1;
                 filter: blur(30px);
                 -webkit-filter: blur(30px);
-                height: 120%; 
+                height: 120%;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
         }
 
-       
+
     }
-   
+
 }
-.carousel-control-prev, .carousel-control-next {
-    margin-left:10%;
-    @media (max-width:768px) {
-        margin-left:0%;
-    }
+
+.carousel-control-prev,
+.carousel-control-next {
+
     .chevron {
-        transition:0.3s border-color;
+        transition: 0.3s border-color;
         position: absolute;
         margin-top: -40px;
         border: none;
-        border-top: 2px solid rgba(255,255,255,.3);
-        border-left: 2px solid rgba(255,255,255,.3);
+        border-top: 2px solid rgba(255, 255, 255, .3);
+        border-left: 2px solid rgba(255, 255, 255, .3);
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
         top: 50%;
@@ -61,22 +168,17 @@
         background: 0 0;
         cursor: pointer;
         text-align: center;
+
         &.chevron-right {
             -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
         }
     }
 
-    &:hover .chevron, &:focus .chevron {
+    &:hover .chevron,
+    &:focus .chevron {
         border-color: #4bf;
     }
 
 
-}
-.carousel-control-next {
-    margin-left:0%;
-    margin-right:10%;
-    @media (max-width:768px) {
-        margin-right:0%;
-    }
 }

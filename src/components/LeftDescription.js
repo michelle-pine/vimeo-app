@@ -14,7 +14,7 @@ class LeftDescription extends RightDescription {
           <div className="vidInfo">
           <div class="infoBox">
               <div class="vidTitle">
-                <h1> {this.video.name}</h1>
+                <h2> {this.video.name}</h2>
               </div>
               <div class="vidDesc">
                 <p>{this.shortenDescription(this.video.description)}</p>
