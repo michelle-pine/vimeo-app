@@ -1,0 +1,65 @@
+@import url('https://use.fontawesome.com/releases/v5.0.7/css/all.css');
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$margin: 50px;
+$margin-smaller:15px;
+
+@mixin gradient {
+  background: rgb(0,0,0); 
+  background: -moz-linear-gradient(top, rgba(0,0,0,.85) 60%, rgba(255,255,255,.85) 100%); 
+  background: -webkit-linear-gradient(top, rgba(0,0,0,.85) 60%,rgba(255,255,255,.85) 100%); 
+  background: linear-gradient(to bottom, rgba(0,0,0,.85) 60%,rgba(255,255,255,.85) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 ); 
+
+}
+.App {
+  text-align: center;
+  font-family: $font-stack;
+  font-size:1rem;
+  line-height:1.2rem;
+
+}
+
+.bg {
+  width:calc(100% - $margin * 4);
+  padding: $margin $margin $margin $margin;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  @media (max-width:768px) {
+    padding: $margin-smaller $margin-smaller $margin-smaller $margin-smaller;
+  }
+}
+
+.dark-bg {
+  @include gradient;
+  color:white;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

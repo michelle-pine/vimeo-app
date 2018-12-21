@@ -1,0 +1,77 @@
+@import '../App.scss';
+
+.videoItem {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color:inherit;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.3s all;
+    margin-bottom:$margin;
+
+    .vidInfo {
+        text-align: left;
+        max-width:560px;
+       
+        .infoBox {
+            display: flex;
+            flex-direction: column;
+            padding-right: $margin;
+           
+            .vidTitle {
+                h1 {
+                    text-transform:uppercase;
+                    margin-block-start: 0px;
+                    margin-block-end: 10px;
+                    font-size:2rem;
+                }
+            }
+    
+            .vidDesc {
+               p {
+                   word-wrap: wrap;
+               }
+                
+            }
+            @media (max-width: 1200px) {
+                padding-right: 0px;
+            }
+            
+    
+        }
+        
+        @media (max-width: 1200px) {
+            max-width: 80%;
+            padding-bottom: $margin-smaller;
+        }
+
+        @media (max-width:768px) {
+            max-width:100%;
+            align-items: left;
+        }
+
+    }
+
+    .vidPic {
+        max-width: 530px;
+        max-height: 315px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+}
+
+.leftDescription.videoItem {
+    flex-wrap:wrap-reverse;
+    .vidPic {
+        padding-right: $margin;
+        @media (max-width:768px) {
+            padding-right:0px;
+        }
+    }
+}
