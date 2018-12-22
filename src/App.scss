@@ -23,6 +23,9 @@ $margin-smaller:15px;
   width:calc(100% - $margin * 4);
   padding: $margin $margin $margin $margin;
   display:flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:568px;
   align-items:center;
   flex-direction:column;
   @media (max-width:768px) {
@@ -33,6 +36,7 @@ $margin-smaller:15px;
 .dark-bg {
   @include gradient;
   color:white;
+  min-height:852px;
 }
 
 .App-logo {

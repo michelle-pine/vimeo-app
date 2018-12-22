@@ -24,7 +24,7 @@ class CarouselItem extends Component {
         <div class="carousel-content">
           <div class="info-container">
             <div class="poster">
-              <img class="poster-img" src={this.video.pictures.sizes[3].link}/>
+              <img class="poster-img" alt={this.video.name} src={this.video.pictures.sizes[3].link}/>
             </div>
             <div class="movie-info">
               <div class="movie-title">
@@ -34,9 +34,10 @@ class CarouselItem extends Component {
                 <p>{this.video.description}</p> 
               </div>
               <div class="movie-buttons">
-                <button href={this.video.link} class="btn btn-watch" style={btnColor}>
-                  <div class="text-together"><i class="fas fa-play-circle"></i>Buy Now </div>                                             </button>
-                <button href={this.video.trailer.link} class="btn btn-outline">Watch Trailer</button>
+                <a href={this.video.link} class="btn btn-watch" style={btnColor}>
+                  <div class="text-together"><i class="fas fa-play-circle"></i>Buy Now </div>
+                  </a>
+                  <a href={this.video.trailer.link} class="btn btn-outline">Watch Trailer</a>
                           
               </div>
 

@@ -9,7 +9,8 @@
     justify-content: center;
     flex-wrap: wrap;
     transition: 0.3s all;
-    margin-bottom:$margin;
+    margin-top:$margin / 2;
+    margin-bottom: $margin/2;
 
     .vidInfo {
         text-align: left;
@@ -18,7 +19,7 @@
         .infoBox {
             display: flex;
             flex-direction: column;
-            padding-right: $margin;
+            margin-right: $margin;
            
             .vidTitle {
                 h1 {
@@ -69,9 +70,9 @@
 .leftDescription.videoItem {
     flex-wrap:wrap-reverse;
     .vidPic {
-        padding-right: $margin;
+        margin-right: $margin;
         @media (max-width:768px) {
-            padding-right:0px;
+            margin-right:0px;
         }
     }
 }

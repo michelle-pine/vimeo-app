@@ -32,8 +32,8 @@ class RightDescription extends Component {
             </div>
           </div>
         </div>
-        <a className="vidPic" alt={this.video.name} href={this.video.link} target="_blank" rel="noopener noreferrer">
-          <img src={this.video.pictures.sizes[4].link}/>
+        <a className="vidPic"href={this.video.link} target="_blank" rel="noopener noreferrer">
+          <img  alt={this.video.name} src={this.video.pictures.sizes[4].link}/>
         </a>
         
       </div>
