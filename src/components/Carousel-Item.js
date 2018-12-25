@@ -37,11 +37,9 @@ class CarouselItem extends Component {
               <div className="movie-buttons">
                 <a href={this.video.link} className="btn btn-watch" style={btnColor}>
                   <div className="text-together"><i className="fas fa-play-circle"></i>Buy Now </div>
-                  </a>
-                  <a href={this.video.trailer.link} className="btn btn-outline">Watch Trailer</a>
-                          
+                </a>
+                <a href={this.video.trailer.link} className="btn btn-outline">Watch Trailer</a>      
               </div>
-
             </div>
           </div>
         </div>
