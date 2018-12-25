@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/vimeo-app/precache-manifest.8e1f0fa0c153807025abfc7b62be76a4.js"
+  "/vimeo-app/precache-manifest.820920f6ed67e4e8da7f11cfd69d8c0e.js"
 );
 
 workbox.clientsClaim();
