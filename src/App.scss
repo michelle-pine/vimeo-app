@@ -21,8 +21,9 @@ $margin-smaller:15px;
 
 }
 
+$marginSmaller: 4 * $margin;
 .bg {
-  width:calc(100% - $margin * 4);
+  width:100%;
   padding: $margin $margin $margin $margin;
   display:flex;
   flex-direction: column;
