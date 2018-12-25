@@ -4,52 +4,53 @@
     width: 100%;
     display: flex;
     text-decoration: none;
-    color:inherit;
+    color: inherit;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     transition: 0.3s all;
-    margin-top:$margin / 2;
+    margin-top: $margin / 2;
     margin-bottom: $margin/2;
 
     .vidInfo {
         text-align: left;
-        max-width:560px;
-       
+        max-width: 560px;
+
         .infoBox {
             display: flex;
             flex-direction: column;
             margin-right: $margin;
-           
+
             .vidTitle {
                 h1 {
-                    text-transform:uppercase;
+                    text-transform: uppercase;
                     margin-block-start: 0px;
                     margin-block-end: 10px;
-                    font-size:2rem;
+                    font-size: 2rem;
                 }
             }
-    
+
             .vidDesc {
-               p {
-                   word-wrap: wrap;
-               }
-                
+                p {
+                    word-wrap: wrap;
+                }
+
             }
+
             @media (max-width: 1200px) {
                 padding-right: 0px;
             }
-            
-    
+
+
         }
-        
+
         @media (max-width: 1200px) {
             max-width: 80%;
             padding-bottom: $margin-smaller;
         }
 
         @media (max-width:768px) {
-            max-width:100%;
+            max-width: 100%;
             align-items: left;
         }
 
@@ -68,11 +69,13 @@
 }
 
 .leftDescription.videoItem {
-    flex-wrap:wrap-reverse;
+    flex-wrap: wrap-reverse;
+
     .vidPic {
         margin-right: $margin;
-        @media (max-width:768px) {
-            margin-right:0px;
+
+        @media (max-width: 768px) {
+            margin-right: 0px;
         }
     }
 }

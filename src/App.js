@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import './App.scss';
 import RightDescription from './components/RightDescription';
@@ -28,6 +27,7 @@ class App extends Component {
     
   }
 
+  
   componentDidMount() {
     //using axios to retrieve videos from the vimeo api
     const url = endpoint + category + '/videos?per_page=' + videosPerPage;
@@ -41,8 +41,6 @@ class App extends Component {
         videos: res.data.data,
         isLoaded: true
       })
-      console.log(this.state);
-      console.log(this.state.videos[1])
     })
   }
 
@@ -52,12 +50,12 @@ class App extends Component {
       <div className="App">
       
       {this.state.isLoaded && this.state.videos.length === 3 ? (
-        <div class="my-container">
+        <div className="my-container">
           <Carousel/>
-          <div class="bg light-bg">
+          <div className="bg light-bg">
             <RightDescription key={this.state.videos[0].uri} video={this.state.videos[0]}/>
           </div>
-          <div class="bg dark-bg">
+          <div className="bg dark-bg">
             <LeftDescription key={this.state.videos[1].uri} video={this.state.videos[1]}/>
             <RightDescription key={this.state.videos[2].uri} video={this.state.videos[2]}/>
           </div>

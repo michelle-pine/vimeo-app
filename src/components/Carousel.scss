@@ -3,16 +3,20 @@
 
 .carousel {
     height: 548px;
-
     .carousel-inner {
         height: 100%;
-        
-
         .carousel-item {
             height: 100%;
             width: 100%;
             overflow: hidden;
             background-color: black;
+            align-items: center;
+            float: left;
+            width: 100%;
+            backface-visibility: hidden;
+            perspective: 1000px;
+            margin-right: -100%;
+            @include transition($carousel-transition);
 
             .carousel-content {
                 width: 100%;
@@ -65,7 +69,7 @@
                         .movie-desc {
                             p {
                                 color: rgba(255, 255, 255, 0.6);
-                                font-weight:600;
+                                font-weight: 600;
                             }
 
                             max-height:300px;
@@ -75,43 +79,50 @@
                         }
 
                         .movie-buttons {
-                            
+
                             .btn {
                                 padding: 13px 15px !important;
                                 font-size: 1.0625rem;
-                                margin-right:$margin / 4;
-                                color:white;
+                                margin-right: $margin / 4;
+                                color: white;
+
                                 .text-together {
-                                    display:flex;
+                                    display: flex;
                                     align-content: center;
                                     flex-direction: row;
                                 }
+
                                 i {
-                                    padding-right:5px;
-                                    font-size:25px;
+                                    padding-right: 5px;
+                                    font-size: 25px;
                                     
                                 }
+
                                 border-radius:5px;
                                 font-weight:bold;
                             }
 
                             .btn-watch {
-                                color:white;
-                                transition:0.3s all;
+                                color: white;
+                                transition: 0.3s all;
+
                                 &:hover {
-                                    opacity:0.8;
+                                    opacity: 0.8;
                                 }
                             }
+
                             .btn-outline {
-                                background:none;
-                                border:.5px solid rgba(255,255,255,.3);
-                                transition:0.3s all;
+                                background: none;
+                                border: 1px solid rgba(255, 255, 255, .3);
+                                transition: 0.3s all;
+
                                 &:hover {
-                                    border:.5px solid rgba(255,255,255,1);
+                                    border: 1px solid rgba(255, 255, 255, 1);
                                 }
                             }
+
                             @media (max-width:768px) {
-                                display:flex;
+                                display: flex;
                                 align-items: center;
                                 justify-content: center;
                             }
@@ -182,3 +193,4 @@
 
 
 }
+

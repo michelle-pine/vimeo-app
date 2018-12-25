@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-
+//represents an item on the carousel
 class CarouselItem extends Component {
   constructor(props) {
     super(props);
@@ -8,6 +8,7 @@ class CarouselItem extends Component {
     this.active = props.active;
   }
 
+  //renders the carousel item as a component
   render() {
     //dynamically changing background image
     var divImage = {
@@ -21,30 +22,30 @@ class CarouselItem extends Component {
     }
     return (
       <div className={"carousel-item " + this.active} style={bgColor}>
-        <div class="carousel-content">
-          <div class="info-container">
-            <div class="poster">
-              <img class="poster-img" alt={this.video.name} src={this.video.pictures.sizes[3].link}/>
+        <div className="carousel-content">
+          <div className="info-container">
+            <div className="poster">
+              <img className="poster-img" alt={this.video.name} src={this.video.pictures.sizes[3].link}/>
             </div>
-            <div class="movie-info">
-              <div class="movie-title">
+            <div className="movie-info">
+              <div className="movie-title">
                 <h2>{this.video.name}</h2>
               </div>
-              <div class="movie-desc">
+              <div className="movie-desc">
                 <p>{this.video.description}</p> 
               </div>
-              <div class="movie-buttons">
-                <a href={this.video.link} class="btn btn-watch" style={btnColor}>
-                  <div class="text-together"><i class="fas fa-play-circle"></i>Buy Now </div>
+              <div className="movie-buttons">
+                <a href={this.video.link} className="btn btn-watch" style={btnColor}>
+                  <div className="text-together"><i className="fas fa-play-circle"></i>Buy Now </div>
                   </a>
-                  <a href={this.video.trailer.link} class="btn btn-outline">Watch Trailer</a>
+                  <a href={this.video.trailer.link} className="btn btn-outline">Watch Trailer</a>
                           
               </div>
 
             </div>
           </div>
         </div>
-        <div class="carousel-item-bg" style={divImage}></div>
+        <div className="carousel-item-bg" style={divImage}></div>
       </div>
     )
   }

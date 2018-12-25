@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Descriptions.scss';
 
-
+//a description/video where the video image is on the right
 class RightDescription extends Component {
   constructor(props) {
     super(props);
@@ -23,11 +23,11 @@ class RightDescription extends Component {
     return (
       <div className="rightDescription videoItem">
         <div className="vidInfo">
-          <div class="infoBox">
-            <div class="vidTitle">
+          <div className="infoBox">
+            <div className="vidTitle">
               <h1> {this.video.name}</h1>
             </div>
-            <div class="vidDesc">
+            <div className="vidDesc">
               <p>{this.shortenDescription(this.video.description)}</p>
             </div>
           </div>

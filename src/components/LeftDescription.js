@@ -2,7 +2,7 @@ import React from 'react';
 import RightDescription from './RightDescription';
 import './Descriptions.scss';
 
-
+//a description/video where the video image is on the left
 class LeftDescription extends RightDescription {
   render() {
     return (
@@ -12,11 +12,11 @@ class LeftDescription extends RightDescription {
             <img src={this.video.pictures.sizes[4].link} alt={this.video.name}/>
           </a>
           <div className="vidInfo">
-          <div class="infoBox">
-              <div class="vidTitle">
+          <div className="infoBox">
+              <div className="vidTitle">
                 <h2> {this.video.name}</h2>
               </div>
-              <div class="vidDesc">
+              <div className="vidDesc">
                 <p>{this.shortenDescription(this.video.description)}</p>
               </div>
             </div>
