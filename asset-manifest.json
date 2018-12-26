@@ -1,13 +1,13 @@
 {
-  "main.css": "/vimeo-app/static/css/main.aef1b307.chunk.css",
-  "main.js": "/vimeo-app/static/js/main.94ea2c83.chunk.js",
-  "main.js.map": "/vimeo-app/static/js/main.94ea2c83.chunk.js.map",
+  "main.css": "/vimeo-app/static/css/main.d03fc48d.chunk.css",
+  "main.js": "/vimeo-app/static/js/main.7661dbc2.chunk.js",
+  "main.js.map": "/vimeo-app/static/js/main.7661dbc2.chunk.js.map",
   "static/js/1.0ff3cfc2.chunk.js": "/vimeo-app/static/js/1.0ff3cfc2.chunk.js",
   "static/js/1.0ff3cfc2.chunk.js.map": "/vimeo-app/static/js/1.0ff3cfc2.chunk.js.map",
   "runtime~main.js": "/vimeo-app/static/js/runtime~main.a1a157af.js",
   "runtime~main.js.map": "/vimeo-app/static/js/runtime~main.a1a157af.js.map",
-  "static/css/main.aef1b307.chunk.css.map": "/vimeo-app/static/css/main.aef1b307.chunk.css.map",
+  "static/css/main.d03fc48d.chunk.css.map": "/vimeo-app/static/css/main.d03fc48d.chunk.css.map",
   "index.html": "/vimeo-app/index.html",
-  "precache-manifest.820920f6ed67e4e8da7f11cfd69d8c0e.js": "/vimeo-app/precache-manifest.820920f6ed67e4e8da7f11cfd69d8c0e.js",
+  "precache-manifest.8c66d4fe936432244ba8a48aba5c240b.js": "/vimeo-app/precache-manifest.8c66d4fe936432244ba8a48aba5c240b.js",
   "service-worker.js": "/vimeo-app/service-worker.js"
 }
