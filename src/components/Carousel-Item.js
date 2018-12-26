@@ -21,7 +21,7 @@ class CarouselItem extends Component {
       backgroundColor:this.video.colors.primary
     }
     return (
-      <div className={"carousel-item " + this.active} style={bgColor}>
+      <div className={"carousel-item " + this.active}>
         <div className="carousel-content">
           <div className="info-container">
             <div className="poster">
@@ -44,6 +44,7 @@ class CarouselItem extends Component {
           </div>
         </div>
         <div className="carousel-item-bg" style={divImage}></div>
+        <div className="carousel-item-bg" style={bgColor}></div>
       </div>
     )
   }
