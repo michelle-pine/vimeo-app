@@ -10,6 +10,9 @@
             height: 100%;
             width: 100%;
             overflow: hidden;
+            -webkit-transition: -webkit-transform .5s ease-in-out;
+            -o-transition: -o-transform .5s ease-in-out;
+            transition: transform .5s ease-in-out;
             background-color: black;
             align-items: center;
             float: left;
@@ -195,4 +198,3 @@
 
 
 }
-
